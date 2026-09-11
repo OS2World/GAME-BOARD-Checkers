@@ -60,7 +60,7 @@ settings persistence in OS2.INI; BLDLEVEL.
 
 ## License
 
-BSD 3-Clause — see [doc/LICENSE.txt](doc/LICENSE.txt)
+GNU GPL V3 — see [doc/LICENSE.txt](doc/LICENSE.txt)
 
 ## Authors
 

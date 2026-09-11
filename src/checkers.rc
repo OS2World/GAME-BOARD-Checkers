@@ -47,7 +47,7 @@ MENU ID_RESOURCE
           }
      SUBMENU "~Help",                          IDM_SUBMENU_HELP
           {
-          MENUITEM "~About Checkers...",       IDM_ABOUT
+          MENUITEM "~About...",                IDM_ABOUT
           }
      }
 
@@ -67,14 +67,15 @@ ACCELTABLE ID_RESOURCE
 
 DLGTEMPLATE IDD_ABOUT_DLG
      {
-     DIALOG "", 0, 32, 32, 220, 120,, FCF_DLGBORDER
+     DIALOG "About Checkers", 0, 32, 24, 240, 110,, FCF_TITLEBAR|FCF_DLGBORDER
           {
-          CTEXT "Checkers Version 1.1"              -1, 10, 96, 200,  8
-          CTEXT "Play a Game With the Program"      -1, 10, 82, 200,  8
-          CTEXT "Original: Microsoft Systems Journal, 9/90" -1, 10, 68, 200, 8
-          CTEXT "(c) 1990, Charles Petzold"         -1, 10, 54, 200,  8
-          CTEXT "Open Watcom port, 2026"             -1, 10, 40, 200,  8
-          DEFPUSHBUTTON "OK"                  DID_OK, 90,  8,  40, 16, GRP
+          CTEXT "Checkers for OS/2",              -1, 10, 90, 220, 8
+          CTEXT "Version 1.1",                    -1, 10, 78, 220, 8
+          CTEXT "OpenWatcom Release",             -1, 10, 66, 220, 8
+          CTEXT "(c) 1990, Charles Petzold",      -1, 10, 54, 220, 8
+          CTEXT "(c) 2026, OS2World",             -1, 10, 42, 220, 8
+          CTEXT "GNU GPL V3",                     -1, 10, 30, 220, 8
+          DEFPUSHBUTTON "Close" DID_OK,               98, 10, 44, 14, GRP
           }
      }
 
