@@ -1,0 +1,45 @@
+Checkers for OS/2 - Changelog
+==============================
+
+
+Version 1.1 (2026-09-10)
+--------------------------
+- FCF_ACCELTABLE added to frame flags; Ctrl+N, Ctrl+Q, Ctrl+X now work
+- Ctrl+F shown as key hint on Frame Controls menu item
+- Frame Controls toggle rewritten after Asteroids pattern: private object
+  window, all four frame controls hidden (FID_TITLEBAR, FID_SYSMENU,
+  FID_MENU, FID_MINMAX), WinInvalidateRect on restore
+- New Game dialog now translates to the active language at open time
+- Window title set to "Checkers" in WinCreateStdWindow
+- Background Run option removed (AI runs in its own thread regardless)
+- Compiler warnings resolved: NULLHANDLE for handle parameters, cast for
+  GpiSetBitmap/DevOpenDC/GpiCreateBitmap, thread function pointer cast
+- Application icon added: checkers.ico (16/32/48 px, FCF_ICON)
+- BLDLEVEL updated to 1.1
+
+
+Version 1.0 (2026-09-10)
+--------------------------
+- Open Watcom port (wcc386/wmake/wrc); ULONG msg in all window procedures
+- Folder structure: src/, bin/, doc/, legacy/
+- Menu restructured: Game / Options / Help
+- Keyboard accelerators: Ctrl+N (New Game), Ctrl+Q (Quit Game),
+  Ctrl+X (Exit), Ctrl+F (Frame Controls)
+- 6-language runtime support: English, Spanish, Dutch, German,
+  French, Italian; language selection persisted in OS2.INI
+- Default window size: 1024 x 768 (centered on desktop)
+- Frame Controls toggle (hide/show title bar and menu)
+- Save Settings on Exit option (persists to OS2.INI)
+- BLDLEVEL string added
+- makefile.wat and compile-wat.cmd added
+- About dialog updated to Version 1.0
+
+
+Version 0.40 (1990-09-01)
+--------------------------
+- Original release by Charles Petzold
+- Published in Microsoft Systems Journal, September 1990
+- Two-menu structure: Game / Colors
+- Four difficulty levels: Simple, Beginner, Intermediate, Advanced
+- Board setup dialog; color customization dialog
+- Separate windows for board, judge, and strategy threads
