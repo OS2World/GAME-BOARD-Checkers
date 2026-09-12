@@ -1,6 +1,8 @@
 # GAME-BOARD-Checkers
 
-Version 1.1 — A 32-bit Presentation Manager checkers game for OS/2 and ArcaOS.
+A 32-bit Presentation Manager checkers game for OS/2 and ArcaOS.
+
+![Checkers ScreenShot](doc/Checkers.png)
 
 Originally written by Charles Petzold and published in
 *Microsoft Systems Journal*, September 1990. This version is an
